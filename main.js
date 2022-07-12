@@ -43,7 +43,6 @@ const addTask = () => {
             taskContainer.innerHTML += taskDark;
         };
         taskArray.push({ taskName: firstLetterCapital(taskName.value), taskId: taskNumber, taskTime: taskTime });
-        console.log(taskArray)
         taskName.value = '';
     };
 }
