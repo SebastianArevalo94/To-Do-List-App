@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <title>HTML</title>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body" class="light">
+    <div class="global">
+        <!-- Title And Change Theme Container -->
+        <div class="titleAndTheme">
+            <h1 id="titleApp" class="titleAppLight">To Do List</h1>
+            <div class="changeTheme" onmousedown="playClick()" onclick="changeTheme()">
+                <img id="themeImg" class="themeImg" src="https://img.icons8.com/ios-glyphs/60/000000/moon-symbol.png" />
+            </div>
+        </div>
+        <!-- Add Task -->
+        <div id="addTaskContainer" class="addTask nes-container ">
+            <!-- Input -->
+            <div class="nes-field">
+                <label id="taskLabel" for="taskInput">Tarea</label>
+                <input type="text" id="taskInput" class="nes-input">
+            </div>
+            <!-- Button DIV -->
+            <div class="addBtnDiv">
+                <button type="button" onmousedown="playClick()" onclick="addTask()" class="addBtn nes-btn is-success">
+                    Agregar
+                </button> <button type="button" onmousedown="playClick()" onclick="clean()" class="cleanBtn nes-btn is-error">
+                    Eliminar
+                </button>
+            </div>
+        </div>
+        <section>
+            <dialog class="nes-dialog alert" id="dialog-default">
+                <form method="dialog">
+                    <p class="nes-text is-error">Error</p>
+                    <p>Debes agregar un nombre a la tarea.</p>
+                    <menu class="dialog-menu">
+                        <button onmousedown="playClick()" class="nes-btn is-error">Confirmar</button>
+                    </menu>
+                </form>
+            </dialog>
+        </section>
+        <!-- Tasks  -->
+        <div id="taskContainer" class="taskDiv"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

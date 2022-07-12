@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.dark{
+  background-color: #000;
+}
+
+.light {
+  background-color: #fff;
+}
+
+.global{
+/*  width: 65%;
+  margin: 5% auto;*/
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.titleAndTheme{
+  display: flex;
+  margin: 12px auto;
+  gap: 35px;
+}
+
+.alert {
+  margin: 9.5% auto;
+}
+
+.addTask {
+  margin:  auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.addTaskDark {
+  border: 4px solid #fff;
+}
+
+.dark {
+  background-color: #212529;
+}
+
+.titleAppLight{
+/*  margin-bottom: 15px;
+  text-align: center;
+  font-size: 23px;*/
+  color: #000;
+  font-size: 45px;
+}
+
+.titleAppDark{
+ color:  #fff;
+ font-size: 45px;
+}
+
+.changeTheme{
+/*  margin-top: 3px;*/
+}
+
+.themeImg{
+  width: 60px;
+  height: 60px;
+}
+
+.nes-input {
+  outline: none;
+}
+
+.addBtnDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.addBtn{
+  margin: auto;
+  width: 230px;
+}
+
+.cleanBtn{
+  margin: auto;
+  width: 230px;
+}
+
+.taskDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: auto;
+}
+
+.onlyTask {
+width: 300px;
+/*position: relative;*/
+/*display: flex;
+flex-direction: column;*/
+}
+
+.taskNum{
+ margin-bottom: 5px;
+ background-color: red;
+}
+
+.timeContainer {
+  display: flex;
+  height: 15px;
+  margin-top: 5px;
+}
+
+.taskTime {
+margin-left: auto;
+}
+
+.invisible {
+  display: none;
+}
